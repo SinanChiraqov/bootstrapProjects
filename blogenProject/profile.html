@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Blogen Project</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-0">
+        <div class="container">
+            <a class="navbar-brand" href="#">Blogen</a>
+            <span class="navbar-toggler-icon d-lg-none" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></span>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto my-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="posts.html">Postes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="users.html">Users</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown pr-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown">
+                            <i class="fas fa-user"></i>
+                            Welcome Brad
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="fas fa-user-circle"></i>
+                                Profile
+                            </a>
+                            <a class="dropdown-item" href="settings.html">
+                                <i class="fas fa-cog"></i>
+                                Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"> <i class="fas fa-user-times    "></i> Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="main-header" class="py-2 bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-white"><i class="fas fa-cog"></i> Deashboard</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Actions -->
+    <section id="actions" class="py-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="index.html" class="btn btn-light btn-block">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to deshboard
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-success btn-block">
+                        <i class="fas fa-lock"></i>
+                        Change Password
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i>
+                        Delete Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Profile Form -->
+    <section id="profile" class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Edit Profile
+                            </h3>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="from-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" class="form-control" value="Sinan Chiragov">
+                                </div>
+                                <div class="from-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" class="form-control" value="sciraqov008@gmail.com">
+                                </div>
+                                <div class="from-group">
+                                    <label for="bio">Bio</label>
+                                    <textarea id="bio" rows="5" class="form-control" name="editor1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem excepturi suscipit est explicabo quae, expedita temporibus saepe optio, distinctio, quia vitae dolorum maiores consequuntur magni provident perspiciatis pariatur aliquam fugiat in sed molestiae sequi ab. Ipsam, hic quae quisquam assumenda accusamus sequi rem obcaecati. Vel illum ea ipsam reprehenderit praesentium? 
+                                </textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="text-capitalize">your avatar</h3>
+                    <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3">
+                    <button class="btn btn-primary btn-block">Edit Image</button>
+                    <button class="btn btn-danger btn-block">Delete Image</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="py-5 text-center text-light bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead">Copyright &copy; <span id="year"></span> Blogen</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $('#year').text(new Date().getFullYear());
+    </script>
+</body>
+
+</html>
